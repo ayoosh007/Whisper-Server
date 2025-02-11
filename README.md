@@ -44,6 +44,7 @@ choco install ffmpeg
 ```
 or
 go to the official ffmpeg site and install ffmpeg
+
 Note: if Installing manually remember to add ffmpeg to your path as whisper calls it using subprocess module
 
 ### For Linux
