@@ -69,14 +69,14 @@ The API will be available at `http://127.0.0.1:8000/`.
 ### 5. Access the API
 
 ```
-GET http://127.0.0.1:8000/transcribe/
+POST http://127.0.0.1:8000/transcribe/
 ```
 
 This will return a list of items in JSON format.
 
 ## API Endpoints
 
-- **GET `transcribe/`**: Gets you the transcription of the .wav file sent to the server
+- **POST `transcribe/`**: Gets you the transcription of the .wav file sent to the server
   
  ## Sample cURL Request
  ```
