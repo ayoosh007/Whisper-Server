@@ -1,6 +1,6 @@
 # Whisper-Server
 
-This repository demonstrates how to set up a basic Django project with the Django REST Framework (DRF) to create a simple API. The project exposes an endpoint that returns static data in JSON format. It does **not** require a database, making it lightweight and easy to set up.
+This repository demonstrates how to set up a basic Django project with the Django REST Framework (DRF) to create a simple API. The project exposes an endpoint that returns static data in JSON format. It does **not** require a database, making it lightweight and easy to set up.This server is a simple RESTful API to access OpenAI's whisper model running locally.
 
 ## Features
 
