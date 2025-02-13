@@ -14,7 +14,7 @@ class Transcriber(APIView):
         model = whisper.load_model("base",device=device)
         if serializer.is_valid():
             audio_file = serializer.validated_data['file']
-            path = default_storage.save(r'D:\Coding\Whisper_OOPServer\myoopsprj\temp_audio.wav',ContentFile(audio_file.read()))
+            path = default_storage.save(r'temp_audio.wav',ContentFile(audio_file.read()))
             result = model.transcribe(default_storage.path(path))
 
             return Response({'transcription':result['text']},status=status.HTTP_200_OK)
