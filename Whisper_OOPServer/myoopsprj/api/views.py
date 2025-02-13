@@ -17,6 +17,6 @@ class Transcriber(APIView):
             path = default_storage.save(r'temp_audio.wav',ContentFile(audio_file.read()))
             result = model.transcribe(default_storage.path(path))
 
-            return Response({'transcription':result['text']},status=status.HTTP_200_OK)
+            return Response({'transcript':result['text']},status=status.HTTP_200_OK)
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
